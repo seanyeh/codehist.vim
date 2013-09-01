@@ -12,13 +12,13 @@ normally.
 Usage:
 It's recommended to put 'set undofile' in your ~/.vimrc to keep track of undo
 history (how the patches are being made). See http://amix.dk/blog/post/19548
-for more info. You may try setting undolevels to a higher number
-if you want to keep track of more history.
+for more info. You may try setting undolevels to a higher number if you want to
+keep track of more history.
 
 Just load up any file and run
 :CodeHistCreateDiffs DIRECTORY
 where DIRECTORY is the name of the directory in which you would like to save
-the patch files. This may take a few moments if your undo
+the patch files. This may take a few moments if your undo history is large.
 
 
 Limitations:
