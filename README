@@ -1,0 +1,28 @@
+codehist.vim
+
+Generate incremental patch files for use with codehist.py, a tool to generate
+code history visualizations. (see https://github.com/seanyeh/codehist.py).
+
+
+Installation:
+This plugin should be compatible with pathogen, vundle, etc. so install
+normally.
+
+
+Usage:
+It's recommended to put 'set undofile' in your ~/.vimrc to keep track of undo
+history (how the patches are being made). See http://amix.dk/blog/post/19548
+for more info. You may try setting undolevels to a higher number
+if you want to keep track of more history.
+
+Just load up any file and run
+:CodeHistCreateDiffs DIRECTORY
+where DIRECTORY is the name of the directory in which you would like to save
+the patch files. This may take a few moments if your undo
+
+
+Limitations:
+Will only generate patch files for history that is stored by vim's undo
+history (limited by the number of undolevels).
+
+This plugin is sort of hacky so use at your own risk :)
