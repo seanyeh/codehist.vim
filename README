@@ -1,7 +1,7 @@
 codehist.vim
 
 Generate incremental patch files for use with codehist.py, a tool to generate
-code history visualizations. (see https://github.com/seanyeh/codehist.py).
+code history visualizations (see https://github.com/seanyeh/codehist.py).
 
 
 Installation:
@@ -11,9 +11,9 @@ normally.
 
 Usage:
 It's recommended to put 'set undofile' in your ~/.vimrc to keep track of undo
-history (how the patches are being made). See http://amix.dk/blog/post/19548
-for more info. You may try setting undolevels to a higher number if you want to
-keep track of more history.
+history (how the patches are being made). http://amix.dk/blog/post/19548 shows
+an example of how to do this. You may try setting undolevels to a higher number
+if you want to keep track of more history.
 
 Just load up any file and run
 :CodeHistCreateDiffs DIRECTORY
